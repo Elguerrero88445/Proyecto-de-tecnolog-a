@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #cbe00f;
+}
+
+body {
+  background-image: url("https://www.24-horas.mx/wp-content/uploads/2022/01/eleccion-de-carrera-shutterstock.jpg");
+  background-size: cover;
+}
+
+img {
+  width: 500px;
+  height: 300px;
+}
+
+.background {
+  background-image: url("university_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: rgba(63, 166, 192, 0.425);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(166, 0, 255, 0.1);
+  max-width: 600px;
+}
+
+.container {
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.introduccion, section {
+  margin-bottom: 20px;
+}
+
+.submit {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit:hover {
+  background-color: #45a049;
+}
+
+.titulo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #942020;
+  margin-bottom: 10px;
+}
+/* Agregar animación de desvanecimiento al cargar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.box {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Agregar animación al botón al pasar el cursor sobre él */
+.submit {
+  transition: transform 1.0s ease;
+}
+
+.submit:hover {
+  transform: scale(1.1);
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+h1 {
+  animation: zoomIn 2s;
+}
+
+
+/*@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+h1 {
+  animation: rotate 2s linear infinite;
+}
+*/

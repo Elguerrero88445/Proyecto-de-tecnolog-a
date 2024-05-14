@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Test</title>
+</head>
+<body>
+  <header>
+    <h1>Test para elegir carrera</h1>
+    <p>Responde segun tus intereses</p>
+  </header>
+  
+  <div class="container">
+    <section id="p0">
+      <h3>1- En el caso de que te den un papel, ¿usted que haria?</h3>
+      <label>
+        <input type="radio" value="1" name="p0" onclick="check()"> Dibujar 
+      </label>
+      <label>
+        <input type="radio" value="2" name="p0" onclick="check()"> Escribir
+      </label>
+    </section>
+    <section id="p1">e
+      <h3>2-Cuando buscas informacion ¿vas directamente a lo que necesitas o lees el articulo completo?</h3>
+      <label>
+        <input type="radio" value="1" name="p1" onclick="check()"> voy directamente a lo que necesito
+      </label>
+      <label>
+        <input type="radio" value="2" name="p1" onclick="check()"> me gusta perderme en la lectura
+      </label>
+    </section>
+    <section id="p2">
+      <h3>3-Cuando trabajas en equipo ¿Qué haces?</h3>
+      <label>
+        <input type="radio" value="1" name="p2" onclick="check()"> Participo de forma pasiva y acato ordenes
+      </label>
+      <label>
+        <input type="radio" value="2" name="p2" onclick="check()"> Tomo el liderazgo e intento hacer que todos participen
+      </label>
+    </section>
+    <button class="my-button" id="continueButton" disabled onclick="llevar1()">Continuar</button>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    function check() {
+      var radios0 = document.getElementsByName('p0');
+      var radios1 = document.getElementsByName('p1');
+      var radios2 = document.getElementsByName('p2');
+
+      var isChecked0 = Array.from(radios0).some(radio => radio.checked);
+      var isChecked1 = Array.from(radios1).some(radio => radio.checked);
+      var isChecked2 = Array.from(radios2).some(radio => radio.checked);
+
+      if (isChecked0 && isChecked1 && isChecked2) {
+        document.getElementById("continueButton").disabled = false;
+      }
+    }
+  </script>
+</body>
+</html>
