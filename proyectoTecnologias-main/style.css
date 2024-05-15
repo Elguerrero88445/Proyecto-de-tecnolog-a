@@ -53,7 +53,7 @@ function calcular(){
         Der++;
         break;
       default:
-        console.log("al chile no se porque imprime esto");
+        console.log("hola");
     }
   }
   if(Der>Izq){
