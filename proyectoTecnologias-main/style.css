@@ -119,14 +119,3 @@ p {
 h1 {
   animation: zoomIn 2s;
 }
-
-
-/*@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-h1 {
-  animation: rotate 2s linear infinite;
-}
-*/
